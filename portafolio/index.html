@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!--*************Barra de navegación************-->
+    <header class="menu_bar">
+      <a class="nav_bar" href="#about_first">About</a>
+      <a class="nav_bar" href="#work_first">Work</a>
+      <a class="nav_bar" href="#contact_first">Contact</a>
+    </header>
+
+    <!--*************Encabezado************-->
+    <div id="main">
+      <h1>Hello, I am Jhon Herrera</h1>
+      <h3>a Web Developer</h3>
+
+      <img id="photo" src="img/Ellipse 1.png" alt="Foto Personal" />
+    </div>
+
+    <!--*************Acerca de************-->
+    <div class="about">
+      <a name="about_first"></a>
+      <h1>About</h1>
+      <p>
+        Hello! I am a Web Developer in the city of Sincelejo, Sucre. When i'm
+        not posting content on Instagram, I make web page designs.<br />
+        Through this website I carry out my work as a freelancer. My goal is to
+        help entrepreneurs and PYMES to design and develop their website and get
+        an internet presence.
+      </p>
+
+      <br />
+      <br />
+
+      <h2>Mastered programming languages</h2>
+
+      <div class="logo_program">
+        <img class="program" src="img/html.png" alt="Html 5" />
+        <img class="program" src="img/css3.png" alt="Css 3" />
+        <img class="program" src="img/js.png" alt="Javascript" />
+      </div>
+    </div>
+
+    <!--*************Trabajo************-->
+    <section class="work">
+      <a name="work_first"></a>
+      <h1>Work</h1>
+      <h2>These are some of my projects</h2>
+
+      <div class="projects">
+        <div class="workspace">
+          <img src="img/tribute_page.png" />
+          <div class="project_buttons">
+            <span id="code" class="code">&lt;</span><a href="#">Tribute Page</a>
+            <span class="code">&#47;&gt;</span>
+          </div>
+        </div>
+
+        <div class="workspace">
+          <img src="img/calculator.png" />
+          <div class="project_buttons">
+            <span class="code">&lt;</span><a href="#">Calculator</a>
+            <span class="code">&#47;&gt;</span>
+          </div>
+        </div>
+
+        <div class="workspace">
+          <img src="img/wikipedia_wiewer.png" />
+          <div class="project_buttons">
+            <span class="code">&lt;</span><a href="#">Wikipedia Viewer</a>
+            <span class="code">&#47;&gt;</span>
+          </div>
+        </div>
+
+        <div class="workspace">
+          <img src="img/game.png" />
+          <div class="project_buttons">
+            <span class="code">&lt;</span><a href="#">Game</a>
+            <span class="code">&#47;&gt;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--*************Contactos************-->
+    <div class="contact">
+      <a name="contact_first"></a>
+      <h1>Contact</h1>
+      <div class="contact_form">
+        <!--Formulario inicio-->
+        <form class="form" action="#" method="POST">
+          <legend>Contact me filling all the fields</legend>
+
+          <div class="form_fields">
+            <div class="fields">
+              <label>Name:</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Type your name"
+                required
+              />
+            </div>
+
+            <div class="fields">
+              <label>Phone:</label>
+              <input type="tel" name="phone" placeholder="Type your phone" />
+            </div>
+
+            <div class="fields change">
+              <label>Mail:</label>
+              <input type="tel" name="mail" placeholder="Type your mail" />
+            </div>
+
+            <div class="fields change">
+              <label>Message:</label>
+              <textarea placeholder="Type your message"></textarea>
+            </div>
+          </div>
+          <div class="submit">
+            <input class="button" type="submit" value="Submit" />
+          </div>
+        </form>
+        <!--Formulario final-->
+      </div>
+      <h1 class="text_padding">Lets Works together...</h1>
+      <h3>How do you take your coffee?</h3>
+
+      <div class="contact_img">
+        <ul>
+          <li>
+            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/jhonherrera7"
+              target="_new"
+              class="github"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="mail"><i class="fas fa-at"></i></a>
+          </li>
+          <li>
+            <a href="#" class="call-me"><i class="fas fa-mobile-alt"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--*************Footer************-->
+    <footer class="footer">
+      <a>All the projects and contact details given are not real.</a>
+      <a>© Created for Jhon Herrera Web Dev </a>
+    </footer>
+  </body>
+</html>

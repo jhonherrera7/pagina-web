@@ -1,0 +1,352 @@
+:root {
+  --facebook: #3b5999;
+  --github: #9b9b9b;
+  --instagram: #e4405f;
+  --twitter: #55acee;
+  --linkedin: #0077b5;
+  --mail: #4169e1;
+  --callme: #00bb2d;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/**************Barra de navegación***********/
+.menu_bar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(0, 0, 0);
+}
+
+.nav_bar {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 2rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav_bar:hover {
+  background-color: rgb(253, 29, 29, 1);
+  padding: 2rem;
+  box-shadow: 0px 5px 25px rgb(12, 12, 12);
+}
+
+/*****************Encabezado**************/
+#main {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  padding: 8rem;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+}
+
+h3 {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+#photo {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+
+/*****************Acerca de**************/
+.about {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 10rem;
+}
+
+.about p {
+  text-align: center;
+  margin: 0 10rem 0 10rem;
+  font-size: 30px;
+}
+
+.logo_program {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5rem;
+}
+
+@media (max-width: 480px) {
+  .logo_program {
+    flex-direction: column;
+  }
+}
+
+.program {
+  width: 200px;
+  height: 200px;
+  padding: 2rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  border-bottom: 10px solid black;
+  padding-bottom: 3px;
+}
+/*****************Trabajo**************/
+.work {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+.workspace {
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.projects {
+  margin: 1rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+}
+
+.project_buttons {
+  background-color: black;
+  padding: 1rem;
+  text-align: center;
+  
+}
+
+.work a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  margin: 10px;
+}
+.work span {
+  color: orange;
+}
+
+/*****************Contactos**************/
+.contact {
+  background: black;
+  padding-top: 1rem;
+  padding-bottom: 8rem;
+  color: white;
+}
+
+/*Formulario*/
+.form {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2rem;
+  border-radius: 10px;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+.form legend {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  display: block;
+  font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  .form {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.form_fields {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fields {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+/*media query*/
+@media (min-width: 480px) {
+  .fields {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .fields {
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+}
+
+.fields label {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/*media query*/
+@media (min-width: 480px) {
+  .fields label {
+    flex: 0 0 90px;
+  }
+}
+
+.fields input[type="text"],
+.fields input[type="tel"],
+.fields input[type="mail"],
+.fields textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+/*media query*/
+@media (min-width: 768px) {
+  :is(.fields)
+    :is(input[type="text"], input[type="text"], input[type="tel"], input[type="mail"], textarea) {
+    flex: 1;
+  }
+}
+
+.change {
+  flex: 0 0 100%;
+}
+
+.fields textarea {
+  height: 4rem;
+}
+
+.submit {
+  display: flex;
+  justify-content: flex-end;
+}
+.button {
+  background-color: black;
+  color: white;
+  margin-top: 0.5rem;
+  padding: 0.5rem 3rem;
+  border-radius: 5px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  border: none;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+/*Redes sociales*/
+.contact_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.text_padding {
+  padding-top: 3rem;
+}
+
+.contact_img ul li {
+  display: inline-block;
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.contact_img ul li a {
+  display: block;
+  padding: 0 16px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  line-height: 50px;
+  font-size: 18px;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: 2s;
+  border-radius: 10px;
+}
+
+.contact_img ul:hover a {
+  filter: blur(2px);
+}
+
+.contact_img ul li a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+}
+
+.contact_img ul li .facebook:hover {
+  background: var(--facebook);
+}
+.contact_img ul li .github:hover {
+  background: var(--github);
+}
+.contact_img ul li .instagram:hover {
+  background: var(--instagram);
+}
+.contact_img ul li .twitter:hover {
+  background: var(--twitter);
+}
+.contact_img ul li .linkedin:hover {
+  background: var(--linkedin);
+}
+.contact_img ul li .mail:hover {
+  background: var(--mail);
+}
+.contact_img ul li .call-me:hover {
+  background: var(--callme);
+}
+
+@media (max-width: 600px) {
+  .contact_img ul {
+    display: none;
+  }
+}
+
+/*****************Footer**************/
+.footer {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  padding: 2rem 10rem;
+  display: flex;
+  justify-content: space-between;
+}
