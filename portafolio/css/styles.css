@@ -45,24 +45,26 @@ body {
 h1 {
   font-size: 50px;
   color: white;
+  text-align: center;
 }
-
-h3 {
+.text_header, .text_second {
+  display: flex;
+  justify-content: center;
+}
+.text_second { 
   font-size: 30px;
   font-style: italic;
   font-weight: normal;
 }
 
-h1,
-h3 {
-  text-align: center;
-}
+
 
 #photo {
-  width: 200px;
-  height: 200px;
-  display: block;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#photo_jhon{
+  width: 150px;
 }
 
 /*****************Acerca de**************/
@@ -85,6 +87,10 @@ h3 {
   margin: 0 5rem;
 }
 
+.logo_program img {
+  width: 100%;
+}
+
 @media (max-width: 480px) {
   .logo_program {
     flex-direction: column;
@@ -92,8 +98,7 @@ h3 {
 }
 
 .program {
-  width: 200px;
-  height: 200px;
+  width: 100px;
   padding: 2rem;
 }
 
@@ -124,8 +129,7 @@ h2 {
 }
 
 img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
 }
 
 
@@ -178,9 +182,11 @@ img {
   display: block;
   font-weight: 900;
 }
-.checkbox{
+
+.checkbox {
   margin-left: 1rem;
 }
+
 @media (min-width: 768px) {
   .form {
     max-width: 800px;
@@ -351,12 +357,19 @@ img {
 }
 
 /*****************Footer**************/
+
 .footer {
   background: linear-gradient(90deg,
       rgba(131, 58, 180, 1) 0%,
       rgba(253, 29, 29, 1) 50%,
       rgba(252, 176, 69, 1) 100%);
-  padding: 2rem 10rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  gap: 5rem;
+  font-size: 15px;
 }
