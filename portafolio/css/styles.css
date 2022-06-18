@@ -47,23 +47,29 @@ h1 {
   color: white;
   text-align: center;
 }
-.text_header, .text_second {
+
+.text_header,
+.text_second {
   display: flex;
   justify-content: center;
 }
-.text_second { 
+
+.text_second {
   font-size: 30px;
   font-style: italic;
   font-weight: normal;
 }
 
-
+h3 {
+  text-align: center;
+}
 
 #photo {
   display: flex;
   justify-content: center;
 }
-#photo_jhon{
+
+#photo_jhon {
   width: 150px;
 }
 
@@ -83,23 +89,15 @@ h1 {
 
 .logo_program {
   display: flex;
-  justify-content: space-between;
-  margin: 0 5rem;
-}
-
-.logo_program img {
-  width: 100%;
+  flex:auto;
+  justify-content: center;
+  gap: 2rem;
 }
 
 @media (max-width: 480px) {
   .logo_program {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
-}
-
-.program {
-  width: 100px;
-  padding: 2rem;
 }
 
 h2 {
